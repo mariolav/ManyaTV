@@ -1,0 +1,104 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Manya TV</title>
+<meta name="generator" content="NSB/AppStudio 6.2.3.1$wrbw" />
+<meta name='date' content='2017-05-04 21:22:53.490841' />
+<meta name='version' content='1.0.1' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />
+<meta name='apple-mobile-web-app-capable' content='YES' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='Copyright 2017' />
+<meta http-equiv='Content-Security-Policy' content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; media-src * blob:; img-src * data:; connect-src *;" />
+<link rel='apple-touch-icon' href='nsb/images/LauncherIcon57.png' />
+<link rel='shortcut icon' sizes='192x192' href='nsb/images/192.png' />
+<link href="nsb/nsbstyle.css" rel="stylesheet">
+<script src="nsb/jquery.js"></script>
+<link href="nsb/jquery.modal.min.css" rel="stylesheet">
+<script src="nsb/hfunc.js"></script>
+<script src="nsb/jquery.modal.min.js"></script>
+<script src="nsb/fastclick.js"></script>
+<script src="nsb/iscroll.js"></script>
+<script src="nsb/jqmFunctions.js"></script>
+<link href="nsb/jquery.mobile.css" rel="stylesheet">
+<script src="nsb/jquery.mobile.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/jplayer/jquery.jplayer.min.js"></script>
+<style type="text/css">
+#Form1 {background:inherit;}
+#jPlayerContainer {position:absolute; left:auto; right:auto; top:auto; bottom:auto; height:100%; width:100%;}
+
+#ContainerList {position:absolute; left:0px; right:auto; top:0px; bottom:auto; height:100%; width:30%;}
+#ListChannels_scroller { display:block; overflow:hidden; width:100%; height:auto; left:auto; top:auto;}
+#ListChannels { display:block; left:auto; top:auto;}
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:helvetica;">
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<script>window.addEventListener('load', function() {new FastClick.attach(document.body)}, false)</script>
+<div data-role="page" id="NSBPage" data-theme="" style="position:absolute; width:100%; height:100%; background-color:inherit; ">
+<a name='/Form1' data-role=none></a>
+<div id=Form1_scroller>
+<div id="Form1" class="nsb-form" style="position:absolute; display:none; height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Form1.innerHTML=[
+  "<div id='jPlayerContainer' class='container-center '  style='background-color:#000000; border-width:1px; border-style:solid; border-color:#000000; ' >","<div id=jPlayerContainer_addChild>",,"</div>","Click on screen","</div>",
+  "<div id='ContainerList' class=''  style='background-color:yellow; border-width:1px; border-style:solid; border-color:yellow; display:none;' >","<div id=ContainerList_addChild>",  NSB.List_jqm14('ListChannels', 'ul', 'none', '', 'b', 'Elija canal, VTV1,RTN,Silence,Aztec,Other', '', 'Y,N,N', '', 'class=" "', '100%', false, false, 'false', 'arrow-r', 'false', '', 'false', 'false'),,"</div>","</div>",
+  ].join('');
+</script>
+</div>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+var NSB = NSB || {};
+NSB.currentForm = Form1;
+NSB.stopOnError = False;
+NSB.enableBrowserArrows = false;
+NSB.enableNiceLinks = false;
+NSB.enableAppScroll = false;
+NSB.newVersionWarning = true;
+NSB.id = 'Project2';
+NSB.voltAppId = '1rCQjJ';
+NSB.voltDashboardAccess = False;
+NSB.voltDomain = '';
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+if (window.$volt) $volt.init(NSB.voltAppId, NSB.voltDomain);
+
+// ***** Code for form: Form1 *****
+window.addEventListener('load', function() {
+  Form1.style.display = 'block';
+  Form1_ref = new IScroll(Form1_scroller,{mouseWheel:true,  bounce:true, zoom:false});
+  Form1.ref = Form1_ref;
+  Form1.scroller = Form1_scroller;
+  NSB.addProperties(Form1);
+  NSB.addProperties.addChild(jPlayerContainer);
+  NSB.addProperties(jPlayerContainer);
+
+  NSB.addProperties.addChild(ContainerList);
+  NSB.addProperties(ContainerList);
+  NSB.List_jqm_init14('ListChannels','Elija canal, VTV1,RTN,Silence,Aztec,Other',false,'100%',false,false);
+  ListChannels.refresh=function(){if (typeof ListChannels_ref!='undefined') setTimeout(NSB.refresh,100,ListChannels_ref)};
+  NSB.addProperties(ListChannels);
+  (function(){var d,i,s=''.split(',');for(i=0;i<s.length;i++){if(s[i].trim()!=''){d=document.getElementById('ListChannels_'+i);(function(i){d.onclick=function(){ChangeForm(document.getElementById(s[i].trim()))}})(i)}}})()
+  Form1.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  Form1.style.display = 'block';
+  Main();
+  if (typeof(Form1.onshow)=='function') Form1.onshow();
+}, false);
+</script>
+<script src='code.js'></script>
+
+</body>
+</html>
